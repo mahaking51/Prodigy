@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODIGY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@700&family=Questrial&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="prodigy.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <input type="checkbox" id="check">
+    <!--header area start-->
+    <header>
+      <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      </label>
+      <div class="left_area">
+        <h3>P R O D I G Y </h3>
+      </div>
+      <div class="right_area">
+        <img class="logo" src="nitt_logo.png" alt="" height="55" width="55">
+        <img class="logo" src="pealogo.png" alt="" height="55" width="55">
+        <img class="logo" src="prodigy.png" alt="" height="55" width="55">
+      </div>
+    </header>
+    <!--header area end-->
+    <!--mobile navigation bar start-->
+    <div class="mobile_nav">
+      <div class="nav_bar">
+        <i class="fa fa-bars nav_btn"></i>
+      </div>
+      <div class="mobile_nav_items">
+        <a href="#" class="home"><i class="fas fa-desktop "></i><span>Home</span></a>
+        <a href="#" class="events"><i class="fas fa-cogs "></i><span>Events</span></a>
+        <a href="#" class="workshops"><i class="fas fa-table "></i><span>Workshops</span></a>
+        <a href="#" class="sponsor"><i class="fas fa-th "></i><span>Sponsors</span></a>
+        <a href="#" class="about"><i class="fas fa-info-circle "></i><span>About Us</span></a>
+      </div>
+    </div>
+    <!--mobile navigation bar end-->
+    <!--sidebar start-->
+    <div class="sidebar">
+      <div class="profile_info">
+      </div>
+      <a href="#" class="home"><i class="fas fa-desktop "></i><span>Home</span></a>
+      <a href="#" class="events"><i class="fas fa-cogs"></i><span>Events</span></a>
+      <a href="#" class="workshops"><i class="fas fa-table "></i><span>Workshops</span></a>
+      <a href="#" class="sponsor"><i class="fas fa-th "></i><span>Sponsors</span></a>
+      <a href="#" class="about"><i class="fas fa-info-circle "></i><span>About Us</span></a>
+    </div>
+    <!--sidebar end-->
+
+    <div class="content">
+      <div class="card" id='home'>
+        <img src="prodigy.png" alt="" height="120" width="120">
+        <h2><span> </span>P R O D I G Y '22</h2>
+        <div class="dtg" ><h3 id="daysRem">0</h3>  Days</div>
+        <div class="dtg" ><h3 id="hoursRem">0</h3> Hours</div>
+        <div class="dtg" ><h3 id="minRem">0</h3> Minutes</div>
+        <div class="dtg" ><h3 id="secRem">0</h3> Seconds</div>
+        <h3>Days To Go..</h3>
+      </div>
+      <div class="card" id="events" style="display: none;">
+        <div>
+          <h2>Events</h2>
+          
+        </div>
+      </div>
+      <div class="card" id="workshops" style="display: none;">
+        <div>
+          <h2>Workshops</h2>
+          <div style="margin: auto;">
+            <img src="https://picsum.photos/seed/picsum/200" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Title</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qui</p>
+              <a href="#" style="color:#19B3D3">Register</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="card" id="sponsors" style="display: none;">
+        <div>
+          <h2>Sponsors</h2>
+
+        </div>
+      </div>
+      <div class="card" id="about" style="display: none;">
+        <div>
+          <img src="prodigy.png" alt="" height="180" width="180">
+          <p>Prodigy, the annual symposium of the Production department is back again, offering a refreshing set of events, workshops, guest lectures and quizzes that will keep your minds sharp and hone your skills.
+
+            A student run organization that aims at encouraging technical innovation and developing managerial skills, Prodigy'21 allows you a chance to test your expertise by competing with fellow prodigies and find out where you stand. With outreach programs conducted in various cities and activities conducted all throughout the year, months of hard work reaches a crescendo in the last two days attracting a footfall of more than 1000 students from various other colleges as prodigy strives to break boundaries and test the limits of the technological world. With each passing edition, Prodigy refines itself to become even better and attempts to break it's own record and Prodigy'21 promises nothing short of a phenomenal experience that will leave you awestruck at the marvels of technology.</p>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+    var countDownDate = new Date("May 5, 2022 9:00:00").getTime();
+
+  var x = setInterval(function() {
+
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById('daysRem').innerHTML=days;
+    document.getElementById('hoursRem').innerHTML=hours;
+    document.getElementById('minRem').innerHTML=minutes;
+    document.getElementById('secRem').innerHTML=seconds;
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+  }
+}, 1000);
+    $(document).ready(function(){
+      $('.nav_btn').click(function(){
+        $('.mobile_nav_items').toggleClass('active');
+      });
+    $('.home').click(function(){
+      $('#home').show();
+      $('#events').hide();
+      $('#workshops').hide();
+      $('#sponsors').hide();
+      $('#about').hide();
+    })
+    $('.events').click(function(){
+      $('#home').hide();
+      $('#events').show();
+      $('#workshops').hide();
+      $('#sponsors').hide();
+      $('#about').hide();
+    })
+    $('.workshops').click(function(){
+      $('#home').hide();
+      $('#events').hide();
+      $('#workshops').show();
+      $('#sponsors').hide();
+      $('#about').hide();
+    })
+    $('.sponsor').click(function(){
+      $('#home').hide();
+      $('#events').hide();
+      $('#workshops').hide();
+      $('#sponsors').show();
+      $('#about').hide();
+    })
+    $('.about').click(function(){
+      $('#home').hide();
+      $('#events').hide();
+      $('#workshops').hide();
+      $('#sponsors').hide();
+      $('#about').show();
+    })
+
+    });
+    </script>
+
+  </body>
+</html>
